@@ -137,7 +137,7 @@
  }
 
  .card__2 {
-     background-image: url("/assets/home/bg-pattern-pricing.svg");
+     background-image: url("assets/home/bg-pattern-pricing.svg");
      background-position: 50% 90%;
  }
 
@@ -192,7 +192,7 @@
      justify-content: flex-end;
    
      background: var(--dark-bg);
-     background-image: url("/assets/home/bg-pattern-pricing.svg");
+     background-image: url("assets/home/bg-pattern-pricing.svg");
      background-repeat: no-repeat;
      background-size: auto;
      background-position: -30% 20%;
@@ -293,7 +293,7 @@
     right: 0;
     background-color: #27293a;
     position: fixed;
-    background-image: url("/assets/home/bg-pattern-pricing.svg");
+    background-image: url("assets/home/bg-pattern-pricing.svg");
     background-repeat: no-repeat;
    }
 
@@ -338,7 +338,7 @@ box-shadow: 2px 7px 15px 1px #000000;
         background:white;
     }
 
-    button {
+    .form__button {
         text-decoration: none;
      padding: 20px 10px;
      font-size: 1.2rem;
@@ -351,6 +351,7 @@ box-shadow: 2px 7px 15px 1px #000000;
      margin-top: 20px;
      letter-spacing: 2px;
      border: none;
+     cursor: pointer;
     }
 
     button:hover {
@@ -393,6 +394,24 @@ box-shadow: 2px 7px 15px 1px #000000;
         justify-content: left;
        
 }
+
+/* form error messages */
+
+.email__error,
+.email__success {
+    display: none;
+    color: red;
+    font-size: .7rem;
+}
+
+/* show messages */
+
+.show {
+    display: block;
+}
+
+
+
    
 
       /* responsive cards */
@@ -433,7 +452,7 @@ box-shadow: 2px 7px 15px 1px #000000;
      }
 
      .card__2 {
-         background-image: url("/assets/home/bg-pattern-pricing.svg");
+         background-image: url("assets/home/bg-pattern-pricing.svg");
          background-position: 50% 90%;
      }
 
@@ -525,7 +544,7 @@ box-shadow: 2px 7px 15px 1px #000000;
  @media (max-width: 862px) {
     .s {
        
-            background-image: url('/assets/home/wavy-dots.png')
+            background-image: url('assets/home/wavy-dots.png')
     
     }
 

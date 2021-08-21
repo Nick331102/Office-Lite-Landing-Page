@@ -14,7 +14,7 @@
   <body>
     <main class="s">
         <div class="logo__container--signup">
-            <img src="/assets/shared/logo.svg" alt="" class="logo" />
+            <img src="assets/shared/logo.svg" alt="" class="logo" />
             </div>
         
         <div class="signup__main--container">
@@ -56,14 +56,11 @@
           </div>
         </div>
         <div class="form__container">
-          <form action="#" class="signup">
-            <input type="text" placeholder="Name" id="name" />
-            <input
-              type="email"
-              name=""
-              id="email"
-              placeholder="Email Address"
-            />
+          <form action="#" class="signup" id = "signup__form">
+            <input type="text" placeholder="Name" id="name" required />
+            <input type="email" required name="" id="email" placeholder="Email Address" />
+            <div class="email__error">Please check your email address</div>
+            <div class="email__success">Thank you for the submission!</div>
             <div class="select">
               <select class="dropdown">
                 <option value="">Basic Pack: Free</option>
@@ -72,12 +69,13 @@
               </select>
             </div>
 
-            <input type="text" placeholder="Phone Number" />
-            <input type="Company" placeholder="Company" />
-            <button>Get on the list</button>
+            <input type="text" placeholder="Phone Number"  id ="phone" />
+            <input type="Company" placeholder="Company" id ="company" />
+            <button type="submit" class="form__button">Get on the list</button>
           </form>
         </div>
       </div>
     </main>
+    <script src="form.js"></script>
   </body>
 </html>
